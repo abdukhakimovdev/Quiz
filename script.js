@@ -78,3 +78,7 @@ qiyinchilikTanlov.addEventListener("change", (e) => {
     vaqtniBoshlash();
     
   })
+  function savolniKorsatish() {
+    var savollar = savollarTanlang();
+    var savol = savollar[hozirgiSavolIndex];
+  }
