@@ -56,3 +56,4 @@ var ortachaSavollar = [
  let hozirgiSavolIndex = 0;
  let vaqt = 60;
  let interval;
+ let tanlanganQiyinchilik = "oson";
