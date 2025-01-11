@@ -93,3 +93,8 @@ qiyinchilikTanlov.addEventListener("change", (e) => {
     keyingiKnopka.classList.add("yashirish");
     progressniYangilash();
 }
+function javobTanlandi(tanlanganIndex, tugma) {
+    var savollar = savollarTanlang();
+    var savol = savollar[hozirgiSavolIndex];
+    var tugmalar = variantlarContaineri.querySelectorAll("button");
+}
