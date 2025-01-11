@@ -90,5 +90,6 @@ qiyinchilikTanlov.addEventListener("change", (e) => {
         tugma.addEventListener("click", () => javobTanlandi(index, tugma));
         variantlarContaineri.appendChild(tugma);
     });
-   
+    keyingiKnopka.classList.add("yashirish");
+    progressniYangilash();
 }
