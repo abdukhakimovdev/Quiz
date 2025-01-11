@@ -167,5 +167,10 @@ function vaqtniBoshlash() {
         }
     }, 1000);
 }
+function progressniYangilash() {
+    var savollar = savollarTanlang();
+    var progress = (hozirgiSavolIndex / savollar.length) * 100;
+    progressBar.style.width = progress + "%";
+}
 
 
