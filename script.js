@@ -97,4 +97,21 @@ function javobTanlandi(tanlanganIndex, tugma) {
     var savollar = savollarTanlang();
     var savol = savollar[hozirgiSavolIndex];
     var tugmalar = variantlarContaineri.querySelectorAll("button");
+    
+    tugmalar.forEach((tbtn, index) => {
+        if (index === savol.javob) {
+            tbtn.classList.add("to'g'ri");
+            if (index === tanlanganIndex) {
+                feedback.innerHTML = "⭐️ To'g'ri javob! ⭐️";
+                ball++;
+            }
+        } else if (index === tanlanganIndex) {
+            tbtn.classList.add("noto'g'ri");
+            feedback.innerHTML = "❌ Noto'g'ri! To'g'ri javob: " + savol.variantlar[savol.javob];
+        }
+        tbtn.disabled = true;
+    });
+
+    feedback.classList.remove("yashirish");
+    keyingiKnopka.classList.remove("yashirish");
 }
