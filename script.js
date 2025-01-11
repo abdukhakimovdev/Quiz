@@ -71,3 +71,4 @@ var qiyinchilikTanlov = document.getElementById("qiyinchilik");
 qiyinchilikTanlov.addEventListener("change", (e) => {
     tanlanganQiyinchilik = e.target.value;
   });
+  boshlashKnopkasi.addEventListener("click", () => {})
