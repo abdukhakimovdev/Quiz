@@ -133,3 +133,27 @@ keyingiKnopka.addEventListener("click", () => {
         natijalariKorsatish();
     }
 });
+function natijalariKorsatish() {
+    viktorinaKonteyneri.innerHTML = `
+        <div class="natija-container">
+            <h2Sizning ballingiz: ${ball} / ${savollarTanlang().length}</h2>
+            <p>${ball === savollarTanlang().length ? "🎉 Mukammal ball!" : "Yaxshi harakat! Qayta urinib ko'ring!"}</p>
+            <button id="qaytaBoshlash-knopkasi" class="btn-birinchi">Qayta urinib ko'rish</button>
+        </div>
+    `;
+
+var  qaytaBoshlashKnopkasi = document.getElementById("qaytaBoshlash-knopkasi");
+    qaytaBoshlashKnopkasi.addEventListener("click", () => {
+        // Boshlanish ekranga qaytish
+        boshlanishEkrani.classList.remove("yashirish");
+        viktorinaKonteyneri.classList.add("yashirish");
+        
+        // Viktorina holatini qayta boshlash
+        ball = 0;
+        hozirgiSavolIndex = 0;
+        vaqt = 60;  // Vaqtni qayta boshlash
+        clearInterval(interval);  // Taqvimni to'xtatish
+        vaqtniBoshlash();  // Vaqtni qayta boshlash
+    });
+}
+
