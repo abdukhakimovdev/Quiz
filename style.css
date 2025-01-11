@@ -1,0 +1,169 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.markazlashgan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.yashirish {
+    display: none;
+}
+
+#viktorina-sarlavhasi {
+    font-size: 50px;
+    color: white;
+    animation: bounce 2s infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#kirish-matni {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Tugmalar */
+.btn-birinchi {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-birinchi:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Qiyinchilikni tanlash */
+.qiyinchilik-container {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.qiyinchilik-belgisi {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.qiyinchilik-tanlovchi {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Viktorina konteyneri */
+#viktorina-konteyneri {
+    max-width: 600px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.variantlar-containeri {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.variantlar-containeri button {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.variantlar-containeri button.togri {
+    background-color: #28a745;
+    color: white;
+}
+
+.variantlar-containeri button.notogri {
+    background-color: #dc3545;
+    color: white;
+}
+
+#fikr-mulohaza {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.timer {
+    font-size: 24px;
+    color: red;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+}
