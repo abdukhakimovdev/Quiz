@@ -57,3 +57,14 @@ var ortachaSavollar = [
  let vaqt = 60;
  let interval;
  let tanlanganQiyinchilik = "oson";
+ 
+var boshlanishEkrani = document.getElementById("boshlanish-ekrani");
+var boshlashKnopkasi = document.getElementById("boshlash-knopkasi");
+var viktorinaKonteyneri = document.getElementById("viktorina-konteyneri");
+var savolElement = document.getElementById("savol");
+var variantlarContaineri = document.getElementById("variantlar");
+var keyingiKnopka = document.getElementById("keyingi-knopka");
+var feedback = document.getElementById("fikr-mulohaza");
+var timerElement = document.getElementById("timer");
+var progressBar = document.getElementById("progress");
+var qiyinchilikTanlov = document.getElementById("qiyinchilik");
