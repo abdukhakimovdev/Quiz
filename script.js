@@ -53,3 +53,5 @@ var ortachaSavollar = [
         javob: 2,
     }
 ];
+ let hozirgiSavolIndex = 0;
+ let vaqt = 60;
