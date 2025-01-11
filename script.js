@@ -156,4 +156,16 @@ var  qaytaBoshlashKnopkasi = document.getElementById("qaytaBoshlash-knopkasi");
         vaqtniBoshlash();  // Vaqtni qayta boshlash
     });
 }
+function vaqtniBoshlash() {
+    interval = setInterval(() => {
+        if (vaqt > 0) {
+            vaqt--;
+            timerElement.textContent = `Vaqt: ${vaqt} sek`;
+        } else {
+            clearInterval(interval);
+            natijalariKorsatish();
+        }
+    }, 1000);
+}
+
 
