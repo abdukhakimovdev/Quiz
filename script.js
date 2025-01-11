@@ -74,5 +74,7 @@ qiyinchilikTanlov.addEventListener("change", (e) => {
   boshlashKnopkasi.addEventListener("click", () => {
     boshlanishEkrani.classList.add("yashirish");
     viktorinaKonteyneri.classList.remove("yashirish");
+    savolniKorsatish();
+    vaqtniBoshlash();
     
   })
