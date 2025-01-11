@@ -115,6 +115,15 @@ function javobTanlandi(tanlanganIndex, tugma) {
     feedback.classList.remove("yashirish");
     keyingiKnopka.classList.remove("yashirish");
 }
+function savollarTanlang() {
+    if (tanlanganQiyinchilik === "oson") {
+      return osonSavollar;
+    } else if (tanlanganQiyinchilik === "ortacha") {
+      return ortachaSavollar;
+    } else {
+      return qiyinSavollar;
+    }
+  }
 keyingiKnopka.addEventListener("click", () => {
     hozirgiSavolIndex++;
     var savollar = savollarTanlang();
