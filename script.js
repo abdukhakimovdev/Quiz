@@ -57,7 +57,7 @@ var ortachaSavollar = [
  let vaqt = 60;
  let interval;
  let tanlanganQiyinchilik = "oson";
- 
+
 var boshlanishEkrani = document.getElementById("boshlanish-ekrani");
 var boshlashKnopkasi = document.getElementById("boshlash-knopkasi");
 var viktorinaKonteyneri = document.getElementById("viktorina-konteyneri");
@@ -68,3 +68,6 @@ var feedback = document.getElementById("fikr-mulohaza");
 var timerElement = document.getElementById("timer");
 var progressBar = document.getElementById("progress");
 var qiyinchilikTanlov = document.getElementById("qiyinchilik");
+qiyinchilikTanlov.addEventListener("change", (e) => {
+    tanlanganQiyinchilik = e.target.value;
+  });
