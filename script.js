@@ -81,4 +81,14 @@ qiyinchilikTanlov.addEventListener("change", (e) => {
   function savolniKorsatish() {
     var savollar = savollarTanlang();
     var savol = savollar[hozirgiSavolIndex];
-  }
+    savolElement.textContent = savol.savol;
+    variantlarContaineri.innerHTML = "";
+    feedback.classList.add("yashirish");
+    savol.variantlar.forEach((variant, index) => {
+        const tugma = document.createElement("button");
+        tugma.textContent = variant;
+        tugma.addEventListener("click", () => javobTanlandi(index, tugma));
+        variantlarContaineri.appendChild(tugma);
+    });
+   
+}
