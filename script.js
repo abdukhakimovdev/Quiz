@@ -115,3 +115,12 @@ function javobTanlandi(tanlanganIndex, tugma) {
     feedback.classList.remove("yashirish");
     keyingiKnopka.classList.remove("yashirish");
 }
+keyingiKnopka.addEventListener("click", () => {
+    hozirgiSavolIndex++;
+    var savollar = savollarTanlang();
+    if (hozirgiSavolIndex < savollar.length) {
+        savolniKorsatish();
+    } else {
+        natijalariKorsatish();
+    }
+});
