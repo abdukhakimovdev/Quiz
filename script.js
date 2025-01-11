@@ -142,16 +142,16 @@ let vaqt = 60;
 let interval;
 let tanlanganQiyinchilik = "oson";
 
-var boshlanishEkrani = document.getElementById("boshlanish-ekrani");
-var boshlashKnopkasi = document.getElementById("boshlash-knopkasi");
-var viktorinaKonteyneri = document.getElementById("viktorina-konteyneri");
-var savolElement = document.getElementById("savol");
-var variantlarContaineri = document.getElementById("variantlar");
-var keyingiKnopka = document.getElementById("keyingi-knopka");
-var feedback = document.getElementById("fikr-mulohaza");
-var timerElement = document.getElementById("timer");
-var progressBar = document.getElementById("progress");
-var qiyinchilikTanlov = document.getElementById("qiyinchilik");
+const boshlanishEkrani = document.getElementById("boshlanish-ekrani");
+const boshlashKnopkasi = document.getElementById("boshlash-knopkasi");
+const viktorinaKonteyneri = document.getElementById("viktorina-konteyneri");
+const savolElement = document.getElementById("savol");
+const variantlarContaineri = document.getElementById("variantlar");
+const keyingiKnopka = document.getElementById("keyingi-knopka");
+const feedback = document.getElementById("fikr-mulohaza");
+const timerElement = document.getElementById("timer");
+const progressBar = document.getElementById("progress");
+const qiyinchilikTanlov = document.getElementById("qiyinchilik");
 
 qiyinchilikTanlov.addEventListener("change", (e) => {
     tanlanganQiyinchilik = e.target.value;
@@ -166,8 +166,8 @@ boshlashKnopkasi.addEventListener("click", () => {
 });
 
 function savolniKorsatish() {
-    var savollar = savollarTanlang();
-    var savol = savollar[hozirgiSavolIndex];
+    const savollar = savollarTanlang();
+    const savol = savollar[hozirgiSavolIndex];
     if (!savol) return; // Agar savol topilmasa, hech narsa qilmaslik
 
     savolElement.textContent = savol.savol;
@@ -175,7 +175,7 @@ function savolniKorsatish() {
     feedback.classList.add("yashirish");
 
     savol.variantlar.forEach((variant, index) => {
-        var tugma = document.createElement("button");
+        const tugma = document.createElement("button");
         tugma.textContent = variant;
         tugma.classList.add("variant-btn");
         tugma.addEventListener("click", () => javobTanlandi(index, tugma));
@@ -187,9 +187,9 @@ function savolniKorsatish() {
 }
 
 function javobTanlandi(tanlanganIndex, tugma) {
-    var savollar = savollarTanlang();
-    var savol = savollar[hozirgiSavolIndex];
-    var tugmalar = variantlarContaineri.querySelectorAll("button");
+    const savollar = savollarTanlang();
+    const savol = savollar[hozirgiSavolIndex];
+    const tugmalar = variantlarContaineri.querySelectorAll("button");
 
     tugmalar.forEach((btn, index) => {
         btn.disabled = true;
@@ -218,7 +218,7 @@ function savollarTanlang() {
 
 keyingiKnopka.addEventListener("click", () => {
     hozirgiSavolIndex++;
-    var savollar = savollarTanlang();
+    const savollar = savollarTanlang();
     if (hozirgiSavolIndex < savollar.length) {
         savolniKorsatish();
     } else {
@@ -236,7 +236,7 @@ function natijalariKorsatish() {
         </div>
     `;
     
-    var qaytaBoshlashKnopkasi = document.getElementById("qaytaBoshlash-knopkasi");
+    const qaytaBoshlashKnopkasi = document.getElementById("qaytaBoshlash-knopkasi");
     qaytaBoshlashKnopkasi.addEventListener("click", qaytaBoshlash);
 }
 
@@ -262,7 +262,7 @@ function vaqtniBoshlash() {
 }
 
 function progressniYangilash() {
-    var savollar = savollarTanlang();
-    var progress = ((hozirgiSavolIndex + 1) / savollar.length) * 100;
+    const savollar = savollarTanlang();
+    const progress = ((hozirgiSavolIndex + 1) / savollar.length) * 100;
     progressBar.style.width = `${progress}%`;
 }
