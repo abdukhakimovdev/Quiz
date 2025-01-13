@@ -1,7 +1,7 @@
 var osonSavollar = [
     {
-        savol: "O'zbekistonning  poytaxti nima?",
-        variantlar: ["A: Qozog'iston", "B: Italiya", "C: Toshkent", "D: Rim"],
+        savol: "qozog'istonning  poytaxti nima?",
+        variantlar: ["A: Qozog'iston", "B: Italiya", "C:Astana", "D: Rim"],
         javob: 2,
     },
     {
