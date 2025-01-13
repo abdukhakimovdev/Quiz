@@ -1,5 +1,10 @@
 var osonSavollar = [
     {
+        savol: "O'zbekistonning  poytaxti nima?",
+        variantlar: ["A: Toshkent", "B: Italiya", "C: Qozog'iston", "D: Rim"],
+        javob: 0, // To'g'ri javob Toshkentga o'zgartirildi
+    },
+    {
         savol: "2*2/2?",
         variantlar: ["A: 4", "B: 2", "C: 0", "D: 1"],
         javob: 1,   
@@ -18,12 +23,7 @@ var osonSavollar = [
         savol: "Dunyodagi eng baland tog' nima?",
         variantlar: ["A: Everest", "B: K2", "C: Kilimanjaro", "D: Fuji"],
         javob: 0,
-    },
-    {
-        savol: "O'zbekistonda eng katta shahar qaysi?",
-        variantlar: ["A: Toshkent", "B: Samarqand", "C: Buxoro", "D: Andijon"],
-        javob: 0, // To'g'ri javob Toshkentga o'zgartirildi
-    },
+    }
 ];
 
 var ortachaSavollar = [
@@ -160,7 +160,7 @@ qiyinchilikTanlov.addEventListener("change", (e) => {
 boshlashKnopkasi.addEventListener("click", () => {
     boshlanishEkrani.classList.add("yashirish");
     viktorinaKonteyneri.classList.remove("yashirish");
-    hozirgiSavolIndex = 1; // Har safar qayta boshlashda indeksni nolga qaytarish
+    hozirgiSavolIndex = 0; // Har safar qayta boshlashda indeksni nolga qaytarish
     savolniKorsatish();
     vaqtniBoshlash();
 });
