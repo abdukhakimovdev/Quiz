@@ -57,7 +57,7 @@ var osonSavollar = [
     {
         savol: "O'zbekistonning  poytaxti nima?",
         variantlar: ["A: Toshkent", "B: Italiya", "C: Qozog'iston", "D: Rim"],
-        javob: 2,
+        javob: 0,
     },
     {
         savol: "2*2/2?",
