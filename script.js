@@ -1,13 +1,13 @@
 var osonSavollar = [
     {
-        savol: "qozog'istonning  poytaxti nima?",
-        variantlar: ["A: Qozog'iston", "B: Italiya", "C:Astana", "D: Rim"],
-        javob: 2,
+        savol: "O'zbekistonning  poytaxti nima?",
+        variantlar: ["A: Toshkent", "B: Italiya", "C: Qozog'iston", "D: Rim"],
+        javob: 0, // To'g'ri javob Toshkentga o'zgartirildi
     },
     {
         savol: "2*2/2?",
-        variantlar: ["A: 2", "B: 4", "C: 0", "D: 1"],
-        javob: 1,
+        variantlar: ["A: 4", "B: 2", "C: 0", "D: 1"],
+        javob: 1,   
     },
     {
         savol: "Qaysi sayyora Qizil sayyora deb ataladi?",
