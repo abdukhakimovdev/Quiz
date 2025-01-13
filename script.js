@@ -62,7 +62,7 @@ var osonSavollar = [
     {
         savol: "2*2/2?",
         variantlar: ["A: 4", "B: 2", "C: 0", "D: 1"],
-        javob: 1,
+        javob: 1,   
     },
     {
         savol: "Qaysi sayyora Qizil sayyora deb ataladi?",
